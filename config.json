@@ -1,26 +1,21 @@
 {
   "version": "0.1",
   "baseSettings": {
-    "runs": 5,
+    "runs": 15,
     "depth": 5,
     "buildCmd": "make CFLAGS=\"-O3\" bin/perft",
-    "runCmd": "./bin/perft"
+    "runCmd": "./bin/perft %p"
   },
+  "remote": "https://github.com/LucDeCaf/c-chess",
   "commits": [
     {
-      "hash": "5e2e6c11440d32267dfc1a996f9e8d557d66c750",
-      "label": "HEAD",
-      "settings": {
-        "runs": 10
-      }
+      "hash": "HEAD",
+      "label": "Latest commit"
     },
     {
       "hash": "773871cec3155bd7d5bd866c86318016e8b65369",
-      "label": "HEAD-1"
-    },
-    {
-      "hash": "f24dde9720cf19b9431516783b8e4f63909c165c",
-      "label": "HEAD-2"
+        "buildCmd": "make CFLAGS=\"-O3\" OPT_LEVEL=\"3\" bin/perft",
+      "label": "Random version"
     }
   ]
 }
